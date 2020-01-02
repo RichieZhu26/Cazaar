@@ -46,8 +46,8 @@ class FindViewController: UIViewController {
         moreButton.layer.borderWidth = borderWidth
         view.addSubview(moreButton)
         
-        collectionView = UICollectionView()
-        collectionView.translatesAutoresizingMaskIntoConstraints = false
+//        collectionView = UICollectionView()
+//        collectionView.translatesAutoresizingMaskIntoConstraints = false
         
         setupConstraints()
         

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		FC1E42B723BDD48B0043701C /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1E42B623BDD48B0043701C /* Chat.swift */; };
-		FC1E42BC23BDFA5C0043701C /* FindCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1E42BB23BDFA5C0043701C /* FindCollectionViewCell.swift */; };
 		FC81B63623B5C84B00D1FC7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC81B63523B5C84B00D1FC7E /* AppDelegate.swift */; };
 		FC81B63C23B5C85000D1FC7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC81B63B23B5C85000D1FC7E /* Assets.xcassets */; };
 		FC81B63F23B5C85000D1FC7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC81B63E23B5C85000D1FC7E /* Preview Assets.xcassets */; };
@@ -22,7 +21,6 @@
 
 /* Begin PBXFileReference section */
 		FC1E42B623BDD48B0043701C /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
-		FC1E42BB23BDFA5C0043701C /* FindCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCollectionViewCell.swift; sourceTree = "<group>"; };
 		FC81B63223B5C84B00D1FC7E /* Cazaar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cazaar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC81B63523B5C84B00D1FC7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC81B63B23B5C85000D1FC7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,7 +78,6 @@
 				FC81B63523B5C84B00D1FC7E /* AppDelegate.swift */,
 				FC1E42B823BDD4BE0043701C /* ViewControllers */,
 				FCBFD00B23B5D34800BAB3DE /* ChatTableViewCell.swift */,
-				FC1E42BB23BDFA5C0043701C /* FindCollectionViewCell.swift */,
 				FC1E42B623BDD48B0043701C /* Chat.swift */,
 				FC81B63B23B5C85000D1FC7E /* Assets.xcassets */,
 				FC81B64023B5C85000D1FC7E /* LaunchScreen.storyboard */,
@@ -176,7 +173,6 @@
 				FCBFD00C23B5D34900BAB3DE /* ChatTableViewCell.swift in Sources */,
 				FC81B64E23B5CAF500D1FC7E /* ChatViewController.swift in Sources */,
 				FC81B65223B5CB1600D1FC7E /* SettingViewController.swift in Sources */,
-				FC1E42BC23BDFA5C0043701C /* FindCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
