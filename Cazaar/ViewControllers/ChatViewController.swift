@@ -38,6 +38,8 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         setupConstraints()
         
+        print("Testing github push")
+        
     }
     
     func setupConstraints() {
