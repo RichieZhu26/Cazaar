@@ -179,7 +179,14 @@ class PostViewController: UIViewController {
     }
     
     @objc func post() {
-        print("You added a new post!")
+        let newPost = Post(id: 1, name: itemTextField.text!, group: groupTextField.text!, description: descriptionTextField.text!, images: [])
+        TabViewController.system = System(postArray: [newPost])
+        print(TabViewController.system.getLength())
+        self.dismiss(animated: true, completion: nil)
+        
+//        let catagoryViewController = CategoryViewController()
+//        catagoryViewController.title = TabViewController.system.getInitials()
+//        navigationController?.pushViewController(catagoryViewController, animated: true)
     }
     
     @objc func cancel() {

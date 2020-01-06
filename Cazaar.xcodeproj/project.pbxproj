@@ -20,6 +20,9 @@
 		FCCADF9823BEF5C7003148A4 /* FindCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCADF9723BEF5C7003148A4 /* FindCollectionViewCell.swift */; };
 		FCCADF9A23BF2B47003148A4 /* Management.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCADF9923BF2B47003148A4 /* Management.swift */; };
 		FCCADF9C23C3060A003148A4 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCADF9B23C3060A003148A4 /* PostViewController.swift */; };
+		FCCADF9E23C321A9003148A4 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCADF9D23C321A9003148A4 /* Post.swift */; };
+		FCCADFA023C3225F003148A4 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCADF9F23C3225F003148A4 /* System.swift */; };
+		FCCADFA423C329C9003148A4 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCADFA323C329C9003148A4 /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		FCCADF9723BEF5C7003148A4 /* FindCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FindCollectionViewCell.swift; path = Cazaar/FindCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		FCCADF9923BF2B47003148A4 /* Management.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Management.swift; sourceTree = "<group>"; };
 		FCCADF9B23C3060A003148A4 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		FCCADF9D23C321A9003148A4 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		FCCADF9F23C3225F003148A4 /* System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
+		FCCADFA323C329C9003148A4 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 			children = (
 				FC81B64B23B5CA6A00D1FC7E /* TabViewController.swift */,
 				FC81B64D23B5CAF500D1FC7E /* ChatViewController.swift */,
+				FCCADFA323C329C9003148A4 /* CategoryViewController.swift */,
 				FC81B64F23B5CB0800D1FC7E /* FindViewController.swift */,
 				FCCADF9B23C3060A003148A4 /* PostViewController.swift */,
 				FC81B65123B5CB1600D1FC7E /* SettingViewController.swift */,
@@ -88,6 +95,8 @@
 				FCCADF9723BEF5C7003148A4 /* FindCollectionViewCell.swift */,
 				FC1E42B623BDD48B0043701C /* Chat.swift */,
 				FCCADF9923BF2B47003148A4 /* Management.swift */,
+				FCCADF9D23C321A9003148A4 /* Post.swift */,
+				FCCADF9F23C3225F003148A4 /* System.swift */,
 				FC81B63B23B5C85000D1FC7E /* Assets.xcassets */,
 				FC81B64023B5C85000D1FC7E /* LaunchScreen.storyboard */,
 				FC81B64323B5C85100D1FC7E /* Info.plist */,
@@ -176,13 +185,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCCADF9A23BF2B47003148A4 /* Management.swift in Sources */,
+				FCCADF9E23C321A9003148A4 /* Post.swift in Sources */,
 				FC81B65023B5CB0800D1FC7E /* FindViewController.swift in Sources */,
 				FC81B64C23B5CA6A00D1FC7E /* TabViewController.swift in Sources */,
+				FCCADFA023C3225F003148A4 /* System.swift in Sources */,
 				FC1E42B723BDD48B0043701C /* Chat.swift in Sources */,
 				FCCADF9C23C3060A003148A4 /* PostViewController.swift in Sources */,
 				FC81B63623B5C84B00D1FC7E /* AppDelegate.swift in Sources */,
 				FCBFD00C23B5D34900BAB3DE /* ChatTableViewCell.swift in Sources */,
 				FC81B64E23B5CAF500D1FC7E /* ChatViewController.swift in Sources */,
+				FCCADFA423C329C9003148A4 /* CategoryViewController.swift in Sources */,
 				FC81B65223B5CB1600D1FC7E /* SettingViewController.swift in Sources */,
 				FCCADF9823BEF5C7003148A4 /* FindCollectionViewCell.swift in Sources */,
 			);

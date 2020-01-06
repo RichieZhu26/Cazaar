@@ -10,6 +10,8 @@ import UIKit
 
 class TabViewController: UITabBarController{
 
+    static var system = System(postArray: [])
+    
     var chat: UINavigationController!
     var find: UINavigationController!
     var setting: UINavigationController!
@@ -18,6 +20,7 @@ class TabViewController: UITabBarController{
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
         chat = UINavigationController(rootViewController: ChatViewController())
         find = UINavigationController(rootViewController: FindViewController())
         setting = UINavigationController(rootViewController: SettingViewController())
