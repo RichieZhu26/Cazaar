@@ -19,6 +19,7 @@
 		FCBFD00C23B5D34900BAB3DE /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBFD00B23B5D34800BAB3DE /* ChatTableViewCell.swift */; };
 		FCCADF9823BEF5C7003148A4 /* FindCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCADF9723BEF5C7003148A4 /* FindCollectionViewCell.swift */; };
 		FCCADF9A23BF2B47003148A4 /* Management.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCADF9923BF2B47003148A4 /* Management.swift */; };
+		FCCADF9C23C3060A003148A4 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCADF9B23C3060A003148A4 /* PostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		FCBFD00B23B5D34800BAB3DE /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		FCCADF9723BEF5C7003148A4 /* FindCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FindCollectionViewCell.swift; path = Cazaar/FindCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		FCCADF9923BF2B47003148A4 /* Management.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Management.swift; sourceTree = "<group>"; };
+		FCCADF9B23C3060A003148A4 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				FC81B64B23B5CA6A00D1FC7E /* TabViewController.swift */,
 				FC81B64D23B5CAF500D1FC7E /* ChatViewController.swift */,
 				FC81B64F23B5CB0800D1FC7E /* FindViewController.swift */,
+				FCCADF9B23C3060A003148A4 /* PostViewController.swift */,
 				FC81B65123B5CB1600D1FC7E /* SettingViewController.swift */,
 			);
 			path = ViewControllers;
@@ -176,6 +179,7 @@
 				FC81B65023B5CB0800D1FC7E /* FindViewController.swift in Sources */,
 				FC81B64C23B5CA6A00D1FC7E /* TabViewController.swift in Sources */,
 				FC1E42B723BDD48B0043701C /* Chat.swift in Sources */,
+				FCCADF9C23C3060A003148A4 /* PostViewController.swift in Sources */,
 				FC81B63623B5C84B00D1FC7E /* AppDelegate.swift in Sources */,
 				FCBFD00C23B5D34900BAB3DE /* ChatTableViewCell.swift in Sources */,
 				FC81B64E23B5CAF500D1FC7E /* ChatViewController.swift in Sources */,

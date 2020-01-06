@@ -15,6 +15,7 @@ class FindViewController: UIViewController, UICollectionViewDelegate, UICollecti
     var moreButton: UIButton!
     var layout: UICollectionViewFlowLayout!
     var collectionView: UICollectionView!
+    var addBarButtonItem: UIBarButtonItem!
     
     let reuseIdentifier = "reuse"
     
@@ -70,6 +71,9 @@ class FindViewController: UIViewController, UICollectionViewDelegate, UICollecti
         collectionView.alwaysBounceHorizontal = true
         view.addSubview(collectionView)
         
+        addBarButtonItem = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(newPost))
+        navigationItem.rightBarButtonItem = addBarButtonItem
+        
         setupConstraints()
         
     }
@@ -80,21 +84,21 @@ class FindViewController: UIViewController, UICollectionViewDelegate, UICollecti
             searchBar.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -sidePadding),
             searchBar.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: topPadding),
             searchBar.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: searchBarHeight)
-            ])
+        ])
         
         NSLayoutConstraint.activate([
             housingButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: sidePadding),
             housingButton.widthAnchor.constraint(equalToConstant: buttonSize),
             housingButton.topAnchor.constraint(equalTo: searchBar.bottomAnchor, constant: topPadding),
             housingButton.heightAnchor.constraint(equalToConstant: buttonSize)
-            ])
+        ])
         
         NSLayoutConstraint.activate([
             moreButton.leadingAnchor.constraint(equalTo: housingButton.trailingAnchor, constant: sidePadding),
             moreButton.widthAnchor.constraint(equalToConstant: buttonSize),
             moreButton.topAnchor.constraint(equalTo: searchBar.bottomAnchor, constant: topPadding),
             moreButton.heightAnchor.constraint(equalToConstant: buttonSize)
-            ])
+        ])
         
         NSLayoutConstraint.activate([
             collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
@@ -119,6 +123,11 @@ class FindViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 100, height: 75)
+    }
+    
+    @objc func newPost() {
+        let postViewController = PostViewController()
+        present(postViewController, animated: true, completion: nil)
     }
 
     /*
