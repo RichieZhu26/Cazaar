@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		FC1E42B723BDD48B0043701C /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1E42B623BDD48B0043701C /* Chat.swift */; };
+		FC2CD26A23C4395D000F1316 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2CD26923C4395D000F1316 /* PostViewController.swift */; };
+		FC2CD26C23C462E2000F1316 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2CD26B23C462E2000F1316 /* PostTableViewCell.swift */; };
 		FC81B63623B5C84B00D1FC7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC81B63523B5C84B00D1FC7E /* AppDelegate.swift */; };
 		FC81B63C23B5C85000D1FC7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC81B63B23B5C85000D1FC7E /* Assets.xcassets */; };
 		FC81B63F23B5C85000D1FC7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC81B63E23B5C85000D1FC7E /* Preview Assets.xcassets */; };
@@ -19,14 +21,15 @@
 		FCBFD00C23B5D34900BAB3DE /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBFD00B23B5D34800BAB3DE /* ChatTableViewCell.swift */; };
 		FCCADF9823BEF5C7003148A4 /* FindCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCADF9723BEF5C7003148A4 /* FindCollectionViewCell.swift */; };
 		FCCADF9A23BF2B47003148A4 /* Management.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCADF9923BF2B47003148A4 /* Management.swift */; };
-		FCCADF9C23C3060A003148A4 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCADF9B23C3060A003148A4 /* PostViewController.swift */; };
+		FCCADF9C23C3060A003148A4 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCADF9B23C3060A003148A4 /* AddPostViewController.swift */; };
 		FCCADF9E23C321A9003148A4 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCADF9D23C321A9003148A4 /* Post.swift */; };
 		FCCADFA023C3225F003148A4 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCADF9F23C3225F003148A4 /* System.swift */; };
-		FCCADFA423C329C9003148A4 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCADFA323C329C9003148A4 /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FC1E42B623BDD48B0043701C /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		FC2CD26923C4395D000F1316 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		FC2CD26B23C462E2000F1316 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		FC81B63223B5C84B00D1FC7E /* Cazaar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cazaar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC81B63523B5C84B00D1FC7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC81B63B23B5C85000D1FC7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,10 +43,9 @@
 		FCBFD00B23B5D34800BAB3DE /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		FCCADF9723BEF5C7003148A4 /* FindCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FindCollectionViewCell.swift; path = Cazaar/FindCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		FCCADF9923BF2B47003148A4 /* Management.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Management.swift; sourceTree = "<group>"; };
-		FCCADF9B23C3060A003148A4 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		FCCADF9B23C3060A003148A4 /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
 		FCCADF9D23C321A9003148A4 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		FCCADF9F23C3225F003148A4 /* System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
-		FCCADFA323C329C9003148A4 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +64,9 @@
 			children = (
 				FC81B64B23B5CA6A00D1FC7E /* TabViewController.swift */,
 				FC81B64D23B5CAF500D1FC7E /* ChatViewController.swift */,
-				FCCADFA323C329C9003148A4 /* CategoryViewController.swift */,
 				FC81B64F23B5CB0800D1FC7E /* FindViewController.swift */,
-				FCCADF9B23C3060A003148A4 /* PostViewController.swift */,
+				FCCADF9B23C3060A003148A4 /* AddPostViewController.swift */,
+				FC2CD26923C4395D000F1316 /* PostViewController.swift */,
 				FC81B65123B5CB1600D1FC7E /* SettingViewController.swift */,
 			);
 			path = ViewControllers;
@@ -93,6 +95,7 @@
 				FC1E42B823BDD4BE0043701C /* ViewControllers */,
 				FCBFD00B23B5D34800BAB3DE /* ChatTableViewCell.swift */,
 				FCCADF9723BEF5C7003148A4 /* FindCollectionViewCell.swift */,
+				FC2CD26B23C462E2000F1316 /* PostTableViewCell.swift */,
 				FC1E42B623BDD48B0043701C /* Chat.swift */,
 				FCCADF9923BF2B47003148A4 /* Management.swift */,
 				FCCADF9D23C321A9003148A4 /* Post.swift */,
@@ -187,15 +190,16 @@
 				FCCADF9A23BF2B47003148A4 /* Management.swift in Sources */,
 				FCCADF9E23C321A9003148A4 /* Post.swift in Sources */,
 				FC81B65023B5CB0800D1FC7E /* FindViewController.swift in Sources */,
+				FC2CD26A23C4395D000F1316 /* PostViewController.swift in Sources */,
 				FC81B64C23B5CA6A00D1FC7E /* TabViewController.swift in Sources */,
 				FCCADFA023C3225F003148A4 /* System.swift in Sources */,
 				FC1E42B723BDD48B0043701C /* Chat.swift in Sources */,
-				FCCADF9C23C3060A003148A4 /* PostViewController.swift in Sources */,
+				FCCADF9C23C3060A003148A4 /* AddPostViewController.swift in Sources */,
 				FC81B63623B5C84B00D1FC7E /* AppDelegate.swift in Sources */,
 				FCBFD00C23B5D34900BAB3DE /* ChatTableViewCell.swift in Sources */,
 				FC81B64E23B5CAF500D1FC7E /* ChatViewController.swift in Sources */,
-				FCCADFA423C329C9003148A4 /* CategoryViewController.swift in Sources */,
 				FC81B65223B5CB1600D1FC7E /* SettingViewController.swift in Sources */,
+				FC2CD26C23C462E2000F1316 /* PostTableViewCell.swift in Sources */,
 				FCCADF9823BEF5C7003148A4 /* FindCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

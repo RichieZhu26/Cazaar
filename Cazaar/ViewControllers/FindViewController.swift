@@ -47,6 +47,7 @@ class FindViewController: UIViewController, UICollectionViewDelegate, UICollecti
         housingButton.translatesAutoresizingMaskIntoConstraints = false
         housingButton.setTitle("House", for: .normal)
         housingButton.setTitleColor(.black, for: .normal)
+        housingButton.addTarget(self, action: #selector(clickHouse), for: .touchUpInside)
         housingButton.layer.borderWidth = borderWidth
         housingButton.layer.cornerRadius = 10
         view.addSubview(housingButton)
@@ -126,8 +127,13 @@ class FindViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     @objc func newPost() {
+        let addPostViewController = AddPostViewController()
+        present(addPostViewController, animated: true, completion: nil)
+    }
+    
+    @objc func clickHouse() {
         let postViewController = PostViewController()
-        present(postViewController, animated: true, completion: nil)
+        navigationController?.pushViewController(postViewController, animated: true)
     }
 
     /*
