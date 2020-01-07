@@ -19,18 +19,13 @@ class PostViewController: UIViewController, UITableViewDelegate, UITableViewData
     let topPadding: CGFloat = 40
     let sidePadding: CGFloat = 25
     
-    var posts: [Post] = []
+    let posts = TabViewController.system.getPostArray()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         view.backgroundColor = .white
-        
-        let fakePost1 = Post(id: 0, name: "CTT-4039", group: "Housing", description: "Awesome apartment", images: [])
-        let fakePost2 = Post(id: 0, name: "CTT-4018", group: "Housing", description: "Nice apartment", images: [])
-        let fakePost3 = Post(id: 0, name: "CTT-4029", group: "Housing", description: "Great apartment", images: [])
-        posts = [fakePost1, fakePost2, fakePost3]
         
         searchBar = UISearchBar()
         searchBar.translatesAutoresizingMaskIntoConstraints = false

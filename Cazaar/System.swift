@@ -15,15 +15,12 @@ class System {
         self.postArray = postArray
     }
     
-    func getInitials() -> String {
-        var initial = ""
-        for post in self.postArray {
-            initial = post.name
-        }
-        return initial
+    func getPostArray() -> [Post] {
+        return self.postArray
     }
     
-    func getLength() -> Int {
-        return self.postArray.count
+    func addPostArray(post: Post) {
+        self.postArray.append(post)
     }
+    
 }

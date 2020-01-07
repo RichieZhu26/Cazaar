@@ -179,9 +179,9 @@ class AddPostViewController: UIViewController {
     }
     
     @objc func post() {
-        let newPost = Post(id: 1, name: itemTextField.text!, group: groupTextField.text!, description: descriptionTextField.text!, images: [])
-        TabViewController.system = System(postArray: [newPost])
-        print(TabViewController.system.getLength())
+        let newPost = Post(id: 100, name: itemTextField.text!, group: groupTextField.text!, description: descriptionTextField.text!, images: [])
+        TabViewController.system.addPostArray(post: newPost)
+        print(TabViewController.system.getPostArray().count)
         self.dismiss(animated: true, completion: nil)
     
     }
