@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EB3AFA1D8ED81156F7129A8 /* Pods_Cazaar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C9A6EE8EA489EF9828AD370 /* Pods_Cazaar.framework */; };
 		FC1E42B723BDD48B0043701C /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1E42B623BDD48B0043701C /* Chat.swift */; };
 		FC2CD26A23C4395D000F1316 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2CD26923C4395D000F1316 /* PostViewController.swift */; };
 		FC2CD26C23C462E2000F1316 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2CD26B23C462E2000F1316 /* PostTableViewCell.swift */; };
@@ -24,9 +25,14 @@
 		FCCADF9C23C3060A003148A4 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCADF9B23C3060A003148A4 /* AddPostViewController.swift */; };
 		FCCADF9E23C321A9003148A4 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCADF9D23C321A9003148A4 /* Post.swift */; };
 		FCCADFA023C3225F003148A4 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCADF9F23C3225F003148A4 /* System.swift */; };
+		FCD5F7A123C73F60009D231C /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD5F7A023C73F60009D231C /* LogInViewController.swift */; };
+		FCD5F7A323C745C8009D231C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD5F7A223C745C8009D231C /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C9A6EE8EA489EF9828AD370 /* Pods_Cazaar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cazaar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70AE89A806CC4E8C3C1D785B /* Pods-Cazaar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cazaar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cazaar/Pods-Cazaar.debug.xcconfig"; sourceTree = "<group>"; };
+		EBD409D9F09CEB1166DE466F /* Pods-Cazaar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cazaar.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cazaar/Pods-Cazaar.release.xcconfig"; sourceTree = "<group>"; };
 		FC1E42B623BDD48B0043701C /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		FC2CD26923C4395D000F1316 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		FC2CD26B23C462E2000F1316 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
@@ -46,6 +52,8 @@
 		FCCADF9B23C3060A003148A4 /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
 		FCCADF9D23C321A9003148A4 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		FCCADF9F23C3225F003148A4 /* System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
+		FCD5F7A023C73F60009D231C /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		FCD5F7A223C745C8009D231C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,15 +61,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EB3AFA1D8ED81156F7129A8 /* Pods_Cazaar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9CA1A473CA5F005D6C9CE1F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70AE89A806CC4E8C3C1D785B /* Pods-Cazaar.debug.xcconfig */,
+				EBD409D9F09CEB1166DE466F /* Pods-Cazaar.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E31BF2FC6FF71259A9C12A8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C9A6EE8EA489EF9828AD370 /* Pods_Cazaar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FC1E42B823BDD4BE0043701C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				FCD5F7A023C73F60009D231C /* LogInViewController.swift */,
+				FCD5F7A223C745C8009D231C /* SignUpViewController.swift */,
 				FC81B64B23B5CA6A00D1FC7E /* TabViewController.swift */,
 				FC81B64D23B5CAF500D1FC7E /* ChatViewController.swift */,
 				FC81B64F23B5CB0800D1FC7E /* FindViewController.swift */,
@@ -77,6 +105,8 @@
 			children = (
 				FC81B63423B5C84B00D1FC7E /* Cazaar */,
 				FC81B63323B5C84B00D1FC7E /* Products */,
+				9CA1A473CA5F005D6C9CE1F7 /* Pods */,
+				E31BF2FC6FF71259A9C12A8C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,9 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC81B64623B5C85100D1FC7E /* Build configuration list for PBXNativeTarget "Cazaar" */;
 			buildPhases = (
+				C1AA5FA8E5716C0FAFC76A4E /* [CP] Check Pods Manifest.lock */,
 				FC81B62E23B5C84B00D1FC7E /* Sources */,
 				FC81B62F23B5C84B00D1FC7E /* Frameworks */,
 				FC81B63023B5C84B00D1FC7E /* Resources */,
+				951442D383C9E072B5526A8F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -182,6 +214,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		951442D383C9E072B5526A8F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Cazaar/Pods-Cazaar-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cazaar/Pods-Cazaar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1AA5FA8E5716C0FAFC76A4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cazaar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FC81B62E23B5C84B00D1FC7E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -195,7 +274,9 @@
 				FCCADFA023C3225F003148A4 /* System.swift in Sources */,
 				FC1E42B723BDD48B0043701C /* Chat.swift in Sources */,
 				FCCADF9C23C3060A003148A4 /* AddPostViewController.swift in Sources */,
+				FCD5F7A123C73F60009D231C /* LogInViewController.swift in Sources */,
 				FC81B63623B5C84B00D1FC7E /* AppDelegate.swift in Sources */,
+				FCD5F7A323C745C8009D231C /* SignUpViewController.swift in Sources */,
 				FCBFD00C23B5D34900BAB3DE /* ChatTableViewCell.swift in Sources */,
 				FC81B64E23B5CAF500D1FC7E /* ChatViewController.swift in Sources */,
 				FC81B65223B5CB1600D1FC7E /* SettingViewController.swift in Sources */,
@@ -334,6 +415,7 @@
 		};
 		FC81B64723B5C85100D1FC7E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70AE89A806CC4E8C3C1D785B /* Pods-Cazaar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -355,6 +437,7 @@
 		};
 		FC81B64823B5C85100D1FC7E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBD409D9F09CEB1166DE466F /* Pods-Cazaar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
