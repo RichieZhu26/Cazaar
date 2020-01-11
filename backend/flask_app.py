@@ -17,6 +17,14 @@ with app.app_context():
 def hello():
     return "Hello World!"
 
+@app.route("/users")
+def get_users():
+    users = User.query.all()
+    data = ''
+    for user in users:
+        data += user.name
+    return json.dumps({'successful': True, 'data': data})
+
 @app.route("/user/signin", methods=['POST'])
 def signin_user():
     data = request.get_json()

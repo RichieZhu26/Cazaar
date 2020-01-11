@@ -115,6 +115,7 @@ class LogInViewController: UIViewController {
     }
     
     @objc func signIn() {
+        NetworkManager.getUsers()
         let tabViewController = TabViewController()
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.window?.rootViewController = tabViewController

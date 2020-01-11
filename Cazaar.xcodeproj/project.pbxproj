@@ -27,6 +27,7 @@
 		FCCADFA023C3225F003148A4 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCADF9F23C3225F003148A4 /* System.swift */; };
 		FCD5F7A123C73F60009D231C /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD5F7A023C73F60009D231C /* LogInViewController.swift */; };
 		FCD5F7A323C745C8009D231C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD5F7A223C745C8009D231C /* SignUpViewController.swift */; };
+		FCFB089523CA27590044E2B9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFB089423CA27590044E2B9 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		FCCADF9F23C3225F003148A4 /* System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
 		FCD5F7A023C73F60009D231C /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		FCD5F7A223C745C8009D231C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		FCFB089423CA27590044E2B9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				FCCADF9923BF2B47003148A4 /* Management.swift */,
 				FCCADF9D23C321A9003148A4 /* Post.swift */,
 				FCCADF9F23C3225F003148A4 /* System.swift */,
+				FCFB089423CA27590044E2B9 /* NetworkManager.swift */,
 				FC81B63B23B5C85000D1FC7E /* Assets.xcassets */,
 				FC81B64023B5C85000D1FC7E /* LaunchScreen.storyboard */,
 				FC81B64323B5C85100D1FC7E /* Info.plist */,
@@ -276,6 +279,7 @@
 				FCCADF9C23C3060A003148A4 /* AddPostViewController.swift in Sources */,
 				FCD5F7A123C73F60009D231C /* LogInViewController.swift in Sources */,
 				FC81B63623B5C84B00D1FC7E /* AppDelegate.swift in Sources */,
+				FCFB089523CA27590044E2B9 /* NetworkManager.swift in Sources */,
 				FCD5F7A323C745C8009D231C /* SignUpViewController.swift in Sources */,
 				FCBFD00C23B5D34900BAB3DE /* ChatTableViewCell.swift in Sources */,
 				FC81B64E23B5CAF500D1FC7E /* ChatViewController.swift in Sources */,
