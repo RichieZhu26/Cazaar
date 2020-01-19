@@ -26,7 +26,7 @@ def get_users():
     return json.dumps({'successful': True, 'data': data})
 
 @app.route("/user/signin", methods=['POST'])
-def signin_user():
+def user_signin():
     data = request.get_json()
     users = User.query.all()
     email = data.get('email')
@@ -37,7 +37,7 @@ def signin_user():
     return json.dumps({'successful': False, 'error': 'authentification failed'})
 
 @app.route("/user/signup", methods=['POST'])
-def signup_user():
+def user_signup():
     data = request.get_json()
     users = User.query.all()
     email = data.get('email')

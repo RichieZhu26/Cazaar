@@ -115,7 +115,9 @@ class LogInViewController: UIViewController {
     }
     
     @objc func signIn() {
-        NetworkManager.getUsers()
+        print(emailTextField.text!)
+        print(passwordTextField.text!)
+        NetworkManager.user_signin(email: emailTextField.text!, password: passwordTextField.text!)
         let tabViewController = TabViewController()
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.window?.rootViewController = tabViewController
