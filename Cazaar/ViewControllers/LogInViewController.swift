@@ -10,6 +10,8 @@ import UIKit
 
 class LogInViewController: UIViewController {
 
+    static var system: System!
+    
     var emailLabel: UILabel!
     var passwordLabel: UILabel!
     var emailTextField: UITextField!
@@ -117,10 +119,17 @@ class LogInViewController: UIViewController {
     @objc func signIn() {
         print(emailTextField.text!)
         print(passwordTextField.text!)
-        NetworkManager.user_signin(email: emailTextField.text!, password: passwordTextField.text!)
-        let tabViewController = TabViewController()
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.window?.rootViewController = tabViewController
+        NetworkManager.user_signin(email: emailTextField.text!, password: passwordTextField.text!) { system in
+            if let system = system {
+                LogInViewController.system = system
+                let tabViewController = TabViewController()
+                let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                appDelegate.window?.rootViewController = tabViewController
+            }
+            else {
+                print("Authentication failed")
+            }
+        }
     }
     
     @objc func signUp() {

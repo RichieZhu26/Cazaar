@@ -9,11 +9,6 @@
 import Foundation
 import Alamofire
 
-struct User: Codable {
-    var email: String
-    var password: String
-}
-
 let get_users_endpoint = "http://127.0.0.1:5000/users"
 let user_signin_endpoint = "http://127.0.0.1:5000/user/signin"
 
@@ -30,7 +25,7 @@ class NetworkManager {
         }
     }
     
-    static func user_signin(email: String, password: String) {
+    static func user_signin(email: String, password: String, completion: @escaping (System?) -> Void) {
         let parameters: [String: Any] = [
             "email": email,
             "password": password
@@ -38,12 +33,14 @@ class NetworkManager {
         Alamofire.request(user_signin_endpoint, method: .post, parameters: parameters, encoding: JSONEncoding.default).validate().responseData { response in
             switch response.result {
             case .success(let data):
-                print("Encoding success")
                 let jsonDecoder = JSONDecoder()
-                if let response = try? jsonDecoder.decode(User.self, from: data) {
-                    print("Recieve user with username \(response.email)")
+                if let response = try? jsonDecoder.decode(UserResponse.self, from: data) {
+                    let system: System = System(currentUser: User(id: response.data.id, name: response.data.name, email: response.data.email, password: response.data.password), postArray: [])
+                    completion(system)
                 }
-                print("Decoding Failure")
+                else {
+                    completion(nil)
+                }
             case .failure(let error):
             print(error.localizedDescription)
             }

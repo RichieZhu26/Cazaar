@@ -11,6 +11,8 @@
 		FC1E42B723BDD48B0043701C /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1E42B623BDD48B0043701C /* Chat.swift */; };
 		FC2CD26A23C4395D000F1316 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2CD26923C4395D000F1316 /* PostViewController.swift */; };
 		FC2CD26C23C462E2000F1316 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2CD26B23C462E2000F1316 /* PostTableViewCell.swift */; };
+		FC5486EA23DA30B700DED1D4 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5486E923DA30B600DED1D4 /* UserResponse.swift */; };
+		FC5486EC23DA389300DED1D4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5486EB23DA389300DED1D4 /* User.swift */; };
 		FC81B63623B5C84B00D1FC7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC81B63523B5C84B00D1FC7E /* AppDelegate.swift */; };
 		FC81B63C23B5C85000D1FC7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC81B63B23B5C85000D1FC7E /* Assets.xcassets */; };
 		FC81B63F23B5C85000D1FC7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC81B63E23B5C85000D1FC7E /* Preview Assets.xcassets */; };
@@ -37,6 +39,8 @@
 		FC1E42B623BDD48B0043701C /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		FC2CD26923C4395D000F1316 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		FC2CD26B23C462E2000F1316 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		FC5486E923DA30B600DED1D4 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
+		FC5486EB23DA389300DED1D4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FC81B63223B5C84B00D1FC7E /* Cazaar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cazaar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC81B63523B5C84B00D1FC7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC81B63B23B5C85000D1FC7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -129,9 +133,11 @@
 				FCCADF9723BEF5C7003148A4 /* FindCollectionViewCell.swift */,
 				FC2CD26B23C462E2000F1316 /* PostTableViewCell.swift */,
 				FC1E42B623BDD48B0043701C /* Chat.swift */,
+				FC5486E923DA30B600DED1D4 /* UserResponse.swift */,
 				FCCADF9923BF2B47003148A4 /* Management.swift */,
 				FCCADF9D23C321A9003148A4 /* Post.swift */,
 				FCCADF9F23C3225F003148A4 /* System.swift */,
+				FC5486EB23DA389300DED1D4 /* User.swift */,
 				FCFB089423CA27590044E2B9 /* NetworkManager.swift */,
 				FC81B63B23B5C85000D1FC7E /* Assets.xcassets */,
 				FC81B64023B5C85000D1FC7E /* LaunchScreen.storyboard */,
@@ -283,9 +289,11 @@
 				FCD5F7A323C745C8009D231C /* SignUpViewController.swift in Sources */,
 				FCBFD00C23B5D34900BAB3DE /* ChatTableViewCell.swift in Sources */,
 				FC81B64E23B5CAF500D1FC7E /* ChatViewController.swift in Sources */,
+				FC5486EA23DA30B700DED1D4 /* UserResponse.swift in Sources */,
 				FC81B65223B5CB1600D1FC7E /* SettingViewController.swift in Sources */,
 				FC2CD26C23C462E2000F1316 /* PostTableViewCell.swift in Sources */,
 				FCCADF9823BEF5C7003148A4 /* FindCollectionViewCell.swift in Sources */,
+				FC5486EC23DA389300DED1D4 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

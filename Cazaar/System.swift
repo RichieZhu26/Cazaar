@@ -9,9 +9,11 @@
 import Foundation
 
 class System {
+    var currentUser: User
     var postArray: [Post]
     
-    init(postArray: [Post]) {
+    init(currentUser: User, postArray: [Post]) {
+        self.currentUser = currentUser
         self.postArray = postArray
     }
     

@@ -19,7 +19,7 @@ class PostViewController: UIViewController, UITableViewDelegate, UITableViewData
     let topPadding: CGFloat = 40
     let sidePadding: CGFloat = 25
     
-    let posts = TabViewController.system.getPostArray()
+    let posts = LogInViewController.system.getPostArray()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +39,6 @@ class PostViewController: UIViewController, UITableViewDelegate, UITableViewData
         view.addSubview(tableView)
         
         setupConstraints()
-        
     }
     
     func setupConstraints() {

@@ -24,11 +24,6 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         view.backgroundColor = .white
         self.title = "Chats"
         
-        let fakeChat1 = Chat(id: 0, friend: "Helen")
-        let fakeChat2 = Chat(id: 1, friend: "Richard")
-        let fakeChat3 = Chat(id: 2, friend: "Kelly")
-        chats = [fakeChat1, fakeChat2, fakeChat3]
-        
         tableView = UITableView(frame: .zero)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.delegate = self

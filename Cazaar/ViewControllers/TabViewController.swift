@@ -9,8 +9,6 @@
 import UIKit
 
 class TabViewController: UITabBarController{
-
-    static var system = System(postArray: [])
     
     var chat: UINavigationController!
     var find: UINavigationController!
@@ -33,16 +31,6 @@ class TabViewController: UITabBarController{
         setting.tabBarItem = settingBar
         
         self.viewControllers = [chat, find, setting]
-        
-        let fakePost1 = Post(id: 0, name: "CTT-4039", group: "Housing", description: "Awesome apartment", images: [])
-        let fakePost2 = Post(id: 0, name: "CTT-4018", group: "Housing", description: "Nice apartment", images: [])
-        let fakePost3 = Post(id: 0, name: "CTT-4029", group: "Housing", description: "Great apartment", images: [])
-        
-        TabViewController.system.addPostArray(post: fakePost1)
-        TabViewController.system.addPostArray(post: fakePost2)
-        TabViewController.system.addPostArray(post: fakePost3)
-        
-        print("Initially there are 3 fake posts in system")
         
     }
     
